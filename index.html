@@ -5,115 +5,130 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cinema para Todos</title>
   <style>
-    <style>
-  body {
-    background-color: #fefefe;
-    color: #333;
-    font-family: 'Segoe UI', sans-serif;
-    margin: 0;
-    padding: 0;
-  }
+    body {
+      background-color: #fef8f5;
+      color: #333;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
 
-  header {
-    background-color: #2c3e50;
-    color: white;
-    padding: 20px;
-    text-align: center;
-  }
+    header, footer {
+      background-color: #792b56;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
 
-  header h1 {
-    font-size: 2.5em;
-    margin-bottom: 0.2em;
-  }
+    .container {
+      padding: 30px;
+      max-width: 1000px;
+      margin: auto;
+    }
 
-  header p {
-    font-size: 1.2em;
-    color: #ddd;
-  }
+    .filme {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin-bottom: 30px;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
 
-  .container {
-    padding: 20px;
-    max-width: 900px;
-    margin: auto;
-  }
+    .filme img {
+      width: 250px;
+      height: auto;
+      border-radius: 8px;
+    }
 
-  .filme {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    padding: 20px;
-    margin-bottom: 30px;
-    display: flex;
-    gap: 20px;
-    align-items: center;
-  }
+    .filme h3 {
+      margin-top: 0;
+    }
 
-  .filme img {
-    width: 200px;
-    border-radius: 5px;
-  }
+    .filme a {
+      background-color: #e07a5f;
+      color: white;
+      padding: 8px 14px;
+      text-decoration: none;
+      border-radius: 6px;
+      margin-top: 10px;
+      display: inline-block;
+    }
 
-  .filme h3 {
-    margin: 0;
-  }
+    .filme a:hover {
+      background-color: #d1593c;
+    }
 
-  .filme p {
-    margin: 10px 0;
-  }
-
-  .filme a {
-    background-color: #27ae60;
-    color: white;
-    padding: 8px 16px;
-    text-decoration: none;
-    border-radius: 5px;
-    display: inline-block;
-  }
-
-  .filme a:hover {
-    background-color: #219150;
-  }
-
-  footer {
-    background-color: #2c3e50;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    margin-top: 40px;
-    font-style: italic;
-    font-size: 0.9em;
-  }
-</style>
+    footer {
+      margin-top: 40px;
+      font-style: italic;
+      font-size: 0.9em;
+    }
+  </style>
 </head>
 <body>
-
   <header>
     <h1>Cinema para Todos</h1>
     <p>Divulgando documentários e filmes educativos para quem não tem acesso</p>
   </header>
 
   <div class="container">
-    <!-- Primeiro filme -->
+    <!-- Filme 1 -->
     <div class="filme">
-      <<img src="https://via.placeholder.com/400x225?text=Document%C3%A1rio" alt="O Começo da Vida">
-      <h3>O Começo da Vida</h3>
-      <p>Um documentário muito legal que fala sobre como a infância é importante.</p>
-      <a href="https://www.youtube.com/watch?v=2vgaF46QyyY" target="_blank">Assistir</a>
+      <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/e/e4/O_Come%C3%A7o_da_Vida.jpg/220px-O_Come%C3%A7o_da_Vida.jpg" alt="O Começo da Vida">
+      <div>
+        <h3>O Começo da Vida</h3>
+        <p>Um documentário muito legal que fala sobre como a infância é importante.</p>
+        <a href="https://www.youtube.com/watch?v=2vgaF46QyyY" target="_blank">Assistir</a>
+      </div>
     </div>
 
-    <!-- Segundo filme -->
+    <!-- Filme 2 -->
     <div class="filme">
-      <<img src="https://via.placeholder.com/400x225?text=Document%C3%A1rio" alt="Cartaz do filme">
-      " alt="Nunca Me Sonharam">
-      <h3>Nunca Me Sonharam</h3>
-      <p>Esse documentário mostra como a educação pública é desvalorizada.</p>
-      <a href="https://www.youtube.com/watch?v=1Fq3XH9IwRI" target="_blank">Assistir</a>
+      <img src="https://miro.medium.com/v2/resize:fit:1200/1*FvGB84FGAlG77HXLADsbnQ.png" alt="Nunca Me Sonharam">
+      <div>
+        <h3>Nunca Me Sonharam</h3>
+        <p>Esse documentário mostra como a educação pública é desvalorizada.</p>
+        <a href="https://www.youtube.com/watch?v=1Fq3XH9IwRI" target="_blank">Assistir</a>
+      </div>
     </div>
+
+    <!-- Filme 3 -->
+    <div class="filme">
+      <img src="https://m.media-amazon.com/images/M/MV5BM2FiYWE1NGEtN2Y1ZS00ZjdiLTllZDMtODg0ZGE3YzUyYjY1XkEyXkFqcGdeQXVyNjg3MDMxNzU@._V1_.jpg" alt="Democracia em Vertigem">
+      <div>
+        <h3>Democracia em Vertigem</h3>
+        <p>Um olhar íntimo sobre os eventos políticos recentes no Brasil, incluindo o impeachment de Dilma Rousseff e a ascensão de Bolsonaro.</p>
+        <a href="https://www.youtube.com/watch?v=RcBEk5x7QiY" target="_blank">Assistir trailer</a>
+      </div>
+    </div>
+
+    <!-- Filme 4 -->
+    <div class="filme">
+      <img src="https://br.web.img3.acsta.net/pictures/13/03/14/21/36/075435.jpg" alt="O Dia Que Durou 21 Anos">
+      <div>
+        <h3>O Dia Que Durou 21 Anos</h3>
+        <p>Revela como os EUA influenciaram o golpe de 1964 no Brasil com gravações inéditas da Casa Branca.</p>
+        <a href="https://www.youtube.com/watch?v=UGqWRyBCHhw" target="_blank">Assistir</a>
+      </div>
+    </div>
+
+    <!-- Filme 5 -->
+    <div class="filme">
+      <img src="https://m.media-amazon.com/images/M/MV5BMzI2ZmIzZDYtZGVmYi00ODRmLTllZDItYzEwZDYzYmE5MjAyXkEyXkFqcGdeQXVyNjAwMjQ0MTY@._V1_FMjpg_UX1000_.jpg" alt="AmarElo: É Tudo Pra Ontem">
+      <div>
+        <h3>AmarElo: É Tudo Pra Ontem</h3>
+        <p>Com Emicida, este documentário resgata a trajetória da cultura negra brasileira, misturando arte, história e educação.</p>
+        <a href="https://www.youtube.com/watch?v=4q0sYrNUKUk" target="_blank">Assistir trailer</a>
+      </div>
+    </div>
+
   </div>
 
   <footer>
     <p>Feito por Marilia Lima - Projeto de Extensão</p>
   </footer>
-
 </body>
 </html>
